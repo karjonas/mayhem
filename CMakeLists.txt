@@ -29,16 +29,19 @@ ticktimer.cpp
 xc.cpp
 )
 
-set(ALLEGRO_LIBS
-allegro
-allegro_primitives
-allegro_audio
-allegro_image
-allegro_font
-allegro_ttf
-allegro_acodec
-)
-
 add_executable(mayhem2 ${SOURCES})
 
-target_link_libraries(mayhem2 ${ALLEGRO_LIBS}) 
+if (NOT WIN32)
+set(ALLEGRO_LIBS
+	allegro
+	allegro_primitives
+	allegro_audio
+	allegro_image
+	allegro_font
+	allegro_ttf
+	allegro_acodec)
+
+target_link_libraries(mayhem2 ${ALLEGRO_LIBS})
+endif()
+
+file(COPY assets DESTINATION .)
