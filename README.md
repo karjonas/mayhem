@@ -78,11 +78,12 @@ You maybe presented with message saying that the application was stopped from st
 
 ##Compile
 
-# Windows using MSYS2
+### Windows using MSYS2
 
 Download and install [MSYS2](http://www.msys2.github.io). Open MinGW 64-bit or MinGW 32-bit shell depending on your architechture.
 
 Install dependencies:
+
 For mingw64 using i686:
 ```
 pacman -S git make mingw-w64-i686-allegro mingw-w64-i686-make mingw-w64-i686-cmake mingw-w64-i686-gcc mingw-w64-i686-openal mingw-w64-i686-dumb mingw-w64-i686-freetype mingw-w64-i686-libvorbis mingw-w64-i686-flac mingw-w64-i686-libjpeg
