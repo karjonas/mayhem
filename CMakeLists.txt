@@ -31,7 +31,7 @@ xc.cpp
 
 add_executable(mayhem2 ${SOURCES})
 
-if (NOT WIN32)
+if (UNIX OR MSYS)
 set(ALLEGRO_LIBS
 	allegro
 	allegro_primitives
@@ -40,7 +40,6 @@ set(ALLEGRO_LIBS
 	allegro_font
 	allegro_ttf
 	allegro_acodec)
-
 target_link_libraries(mayhem2 ${ALLEGRO_LIBS})
 endif()
 
