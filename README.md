@@ -105,6 +105,26 @@ make
 ./mayhem2.exe
 ```
 
+### Ubuntu
+
+Install dependencies:
+
+```
+sudo apt-get install liballegro5-dev git cmake
+```
+
+Clone repository, compile and run:
+
+```
+git clone https://github.com/martinohanlon/mayhem.git
+cd mayhem
+mkdir build
+cd build
+cmake ..
+make
+./mayhem2
+```
+
 ##Version history
 * beta - compiles, runs, ongoing mods
 * 0.1 - added new levels and features
